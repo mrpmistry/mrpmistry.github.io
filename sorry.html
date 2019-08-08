@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=0" />
+    <title>Sorry</title>
+    <!--[if IE]>
+            <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+        <![endif]-->
+    <style>
+    .js-Carousel {
+        background: #fff;
+        height: 190px;
+        margin: 0 auto 2em;
+        overflow: hidden;
+        position: relative;
+        width: 300px;
+    }
+
+    .js-Carousel>ul {
+        height: 200px;
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        width: 9999px;
+    }
+
+    .js-Carousel>ul li {
+        display: inline-block;
+        width: 300px;
+        text-align: center;
+        transition: margin-left 3s linear;
+
+    }
+
+    .js-Carousel>ul li img {
+        max-width: 100%;
+    }
+
+    .js-Carousel .js-Carousel-arrowPrev,
+    .js-Carousel .js-Carousel-arrowNext {
+        background: transparent;
+        border: 0;
+        color: #e0e0e0;
+        cursor: pointer;
+        font: 400 10em sans-serif;
+        height: 200px;
+        outline: 0;
+        position: absolute;
+        top: 0;
+        text-shadow: 0 0 10px #444444;
+        width: 90px;
+        transition: all 0.2s ease;
+    }
+
+    .js-Carousel .js-Carousel-arrowPrev:hover,
+    .js-Carousel .js-Carousel-arrowNext:hover {
+        color: #aaaaaa;
+    }
+
+    .js-Carousel .js-Carousel-arrowPrev {
+        left: 0;
+    }
+
+    .js-Carousel .js-Carousel-arrowNext {
+        right: 0;
+    }
+
+    .js-Carousel .js-Carousel-dots {
+        display: inline-block;
+        height: 1.25em;
+        margin: 0;
+        position: absolute;
+        bottom: 1em;
+        right: 1em;
+        width: auto;
+    }
+
+    .js-Carousel .js-Carousel-dots li {
+        background: #aaaaaa;
+        border-radius: 0.75em;
+        cursor: pointer;
+        display: inline-block;
+        height: 0.75em;
+        margin: 0 0.75em;
+        width: 0.75em;
+        transition: all 0.2s ease;
+    }
+
+    .js-Carousel .js-Carousel-dots li.is-active {
+        background: #ffffff;
+        box-shadow: 0 0 3px 3px #ddd;
+    }
+
+    .js-Carousel .js-Carousel-dots li:hover {
+        background: #f5f5f5;
+    }
+
+    .js-Carousel .js-Carousel-btnStop,
+    .js-Carousel .js-Carousel-btnPlay {
+        background: #aaaaaa;
+        border: 0;
+        cursor: pointer;
+        height: 2.25em;
+        position: absolute;
+        bottom: 1em;
+        left: 2em;
+        text-align: center;
+        width: 5em;
+        transition: all 0.2s ease;
+    }
+
+    .js-Carousel .js-Carousel-btnStop:hover,
+    .js-Carousel .js-Carousel-btnPlay:hover {
+        background: #f5f5f5;
+    }
+
+    .js-Carousel .js-Carousel-btnStop {
+        left: 100px;
+    }
+    </style>
+</head>
+
+<body id="main">
+    <div class="js-Carousel" id="carousel">
+        <ul>
+            <li class="slide">
+                <img src="https://drive.google.com/uc?id=1fV3uFprUXaPIrcDg9rw9gpOspvQoCbIV" height="190" alt="" />
+            </li>
+            <li class="slide">
+                <img src="https://drive.google.com/uc?id=1HDNiwsOlMzbJv8Ijm-G3RGIxwQ8r_Bjg" height="190" alt="" />
+            </li>
+            <li class="slide">
+                <img src="https://drive.google.com/uc?id=1Ky6RU0brcHUmkhl_HrOZr-TvZ9K-y8ov" height="190" alt="" />
+            </li>
+            <li class="slide">
+                <img src="https://drive.google.com/uc?id=10kyBo90kh4aytnB7LHei8e6ZFoCsj2Ss" height="190" alt="" />
+            </li>
+            <li class="slide">
+                <img src="https://drive.google.com/uc?id=1XtjiP0pH4gxAGjroRv-yMlsEZCME74gS" height="190" alt="" />
+            </li>
+            <li class="slide">
+                <img src="https://drive.google.com/uc?id=1uUGTALh0YCe2VQFN3_7AG-S0npL9pTi4" height="190" alt="" />
+            </li>
+            <li class="slide">
+                <img src="https://drive.google.com/uc?id=1yt3AwHdEpZQNwg2_gbadCwvbSJQx0xL1" height="190" alt="" />
+            </li>
+            <li class="slide">
+                <img src="https://drive.google.com/uc?id=1HMBgM-1qpxG2NFz2vKGskwtENahWYDOL" height="190" alt="" />
+            </li>
+            <li class="slide">
+                <img src="https://drive.google.com/uc?id=18a7OZttV0vOyzxKFmJ7ZYmsd_2K-kgDw" height="190" alt="" />
+            </li>
+            <li class="slide">
+                <img src="https://drive.google.com/uc?id=1MDS79k3qMqyonbY2VXg3-GhyAK29QZuR" height="190" alt="" />
+            </li>
+            <li class="slide">
+                <img src="https://drive.google.com/uc?id=13j2c9An9WgLZQBGsHDksw_XcuSpiSx2B" height="190" alt="" />
+            </li>
+            <li class="slide">
+                <img src="https://drive.google.com/uc?id=1bg38oBSkmRDmM9UyWFXXWmMRsNF7u9O4" height="190" alt="" />
+            </li>
+            <li class="slide">
+                <img src="https://drive.google.com/uc?id=1VPeP8RQle6px-q0VsmUHTTnnn1TQxJJ1" height="190" alt="" />
+            </li>
+            <li class="slide">
+                <img src="https://drive.google.com/uc?id=1Lkrd15tf5SwE7Ff64kL_JBCCQaFGBhC4" height="190" alt="" />
+            </li>
+        </ul>
+    </div>
+</body>
+<script>
+/**
+ * Vanilla Javascript Carousel v3.1.2
+ * https://zoltantothcom.github.io/vanilla-js-carousel
+ */
+function Carousel(n) {
+    var i = document.getElementById(n.elem || "carousel"),
+        e = n.interval || 3e3,
+        r = n.btnPlayText || "Play",
+        l = n.btnStopText || "Stop",
+        a = n.arrNextText || "›",
+        o = n.arrPrevText || "‹",
+        u = "js-Carousel",
+        c = "js-Carousel-arrowPrev",
+        s = "js-Carousel-arrowNext",
+        d = "js-Carousel-dots",
+        f = "js-Carousel-btnStop",
+        v = "js-Carousel-btnPlay",
+        p = i.querySelectorAll("li").length,
+        L = 0,
+        t = null;
+
+    function m(e, t, n) {
+        var r = i.querySelectorAll("." + u + " > ul li")[e];
+        r.style.marginLeft = t, i.querySelector("." + u + " > ul").removeChild(r), i.querySelector("." + u + " > ul").insertAdjacentHTML(n, r.outerHTML)
+    }
+
+    function y() {
+        [].forEach.call(i.querySelectorAll("." + d + " li"), function(e) {
+            e.classList.remove("is-active")
+        }), i.querySelectorAll("." + d + " li")[L].classList.add("is-active")
+    }
+
+    function h(e) {
+        e.style.marginLeft = ""
+    }
+
+    function b(e) {
+        e.style.marginLeft = -i.offsetWidth + "px"
+    }
+
+    function C(e) {
+        var t = L - e;
+        t < 0 ? E(-t, q) : E(t, S)
+    }
+
+    function E(e, t) {
+        for (var n = 0; n < e; n++) t()
+    }
+
+    function S() {
+        n.infinite ? (h(i.querySelectorAll("." + u + " > ul li")[0]), m(p - 1, -i.offsetWidth + "px", "afterBegin"), g(-1)) : function() {
+            if (T(), 0 === L) return;
+            h(i.querySelectorAll("." + u + " > ul li")[L - 1]), g(-1)
+        }(), A()
+    }
+
+    function q() {
+        n.infinite ? (b(i.querySelectorAll("." + u + " > ul li")[1]), m(0, "", "beforeEnd"), g(1)) : function() {
+            if (L === p - 1) return T();
+            b(i.querySelectorAll("." + u + " > ul li")[L]), g(1)
+        }(), A()
+    }
+
+    function g(e) {
+        switch (L += e) {
+            case -1:
+                L = p - 1;
+                break;
+            case p:
+                L = 0;
+                break;
+            default:
+                L = L
+        }
+        n.dots && y()
+    }
+
+    function A() {
+        t && (T(), x())
+    }
+
+    function x() {
+        t || (t = setInterval(q.bind(this), e))
+    }
+
+    function T() {
+        clearInterval(t), t = null
+    }
+    return 1 < p && function() {
+        var e = {
+            dots: function() {
+                return function() {
+                    var e = document.createElement("ul");
+                    e.classList.add(d), e.addEventListener("click", function(e) {
+                        "LI" === e.target.tagName && (C(e.target.getAttribute("data-position")), A())
+                    }.bind(this));
+                    for (var t = 0; t < p; t++) {
+                        var n = document.createElement("li");
+                        n.setAttribute("data-position", t), e.appendChild(n)
+                    }
+                    i.appendChild(e), y()
+                }()
+            },
+            arrows: function() {
+                return function() {
+                    var e = document.createElement("button");
+                    e.innerHTML = o, e.classList.add(c);
+                    var t = document.createElement("button");
+                    t.innerHTML = a, t.classList.add(s), e.addEventListener("click", S), t.addEventListener("click", q), i.appendChild(e), i.appendChild(t)
+                }()
+            },
+            buttons: function() {
+                return function() {
+                    var e = document.createElement("button");
+                    e.innerHTML = r, e.classList.add(v), e.addEventListener("click", x);
+                    var t = document.createElement("button");
+                    t.innerHTML = l, t.classList.add(f), t.addEventListener("click", T), i.appendChild(e), i.appendChild(t)
+                }()
+            },
+            autoplay: function() {
+                return x()
+            },
+            infinite: function() {
+                return m(p - 1, -i.offsetWidth + "px", "afterBegin")
+            },
+            initial: function() {
+                var e = n.initial >= p ? p : n.initial;
+                return C(e)
+            }
+        };
+        for (var t in e) n.hasOwnProperty(t) && n[t] && e[t]()
+    }(), {
+        live: function() {
+            return L
+        },
+        show: C,
+        prev: S,
+        next: q,
+        play: x,
+        stop: T
+    }
+}
+
+var carousel = new Carousel({
+    elem: 'carousel', // id of the carousel container
+    autoplay: true, // starts the rotation automatically
+    infinite: true, // enables infinite mode
+    interval: 3000, // interval between slide changes
+    initial: 0, // slide to start with
+    dots: false, // show navigation dots
+    arrows: false, // show navigation arrows
+    buttons: false // show play/stop buttons
+});
+</script>
+
+</html>
